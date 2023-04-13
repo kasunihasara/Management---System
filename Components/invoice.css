@@ -1,0 +1,38 @@
+.row {
+    text-align: center;
+}
+
+.c1,
+.c2 {
+    border: 10px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    background-color: #6C8793;
+    border: 10px solid white;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 8px;
+}
+
+.c1 {
+    background-color: #6C8793;
+}
+
+.c2 {
+    background-color: #808080;
+}
+
+.container {
+   
+    padding: 1%;
+    border: 10px solid yellow;
+    background-color: white;
+    margin-left: 23%;
+    margin-top: 5%;
+}

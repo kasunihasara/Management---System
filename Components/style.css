@@ -1,0 +1,27 @@
+.row {
+    text-align: center;
+}
+
+.c1,
+.c2 {
+    border: 10px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.c1 {
+    background-color: #6C8793;
+}
+
+.c2 {
+    background-color: #808080;
+}
+
+.container {
+    padding: 1%;
+    border: 10px solid yellow;
+}

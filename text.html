@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist\css\bootstrap.css">
+    <link rel="stylesheet" type="" href="bootstrap-5.2.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body style="background-color:#FAEED2">
+    <!--Main Navigation-->
+    <header>
+
+        <div class="sidebar">
+            <a href="" onclick="my()"><img src=" images\customers-icon-3.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a href="#news" onclick="my()"><img src="images\analytics-circle-green-512.webp " alt=" " style="width: 40px; height:40px; "></a>
+            <a href="#contact"><img src="images\red_shoppictbasket_1484336512-1.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a href="#about"><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png " alt="
+                " style="width: 40px; height:40px; "></a>
+            <a href=""><img src="images\icons8-name-tag-96.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a href=""><img src="images\person-icon-red-14.jpg " alt=" " style="width: 40px; height:40px; "></a>
+            <a href=""><img src="images\icons8-dollar-sign-64.png " alt=" " style="width: 40px; height:40px; "></a>
+        </div>
+
+        <!-- BurgerMenu -->
+
+
+        <!-- BurgerMenu -->
+        <script>
+            document.getElementById("myLinks").style.display = "none";
+        </script>
+
+        <!-- Navbar -->
+        <nav id="main-navbar " class="navbar navbar-expand-lg navbar-light bg-white fixed-top " style="height:60px ">
+            <!-- Container wrapper -->
+            <div class="container-fluid " style="background-color: #EFE695;height:60px ">
+
+                <a href="javascript:void(0); " onclick="myFunction()"><img src="images\588a6507d06f6719692a2d15 (1).png " alt=" " style="width: 35px; height:35px; margin-left:20px "></a>
+                <h2 style="left:120px; position: absolute; ">NAVOD Distribution</h2>
+
+
+
+
+
+
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main style="margin-top: 58px;">
+        <div id="main" class="container pt-4 \ ">
+            <p>jana</p>
+        </div>
+        <script>
+            function my() {
+                document.getElementById("main").innerHTML = "<p>janitha</p>";
+            }
+        </script>
+
+        <script src="Components/app.js" type="module"></script>
+        <div id="main-body" class="container pt-4 \">
+            <text-zero></text-zero>
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function agent() {
+
+
+            document.getElementById("main-body").innerHTML = "<p>jani</p>";
+
+
+
+        }
+    </script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>

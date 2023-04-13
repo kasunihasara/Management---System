@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+}
+
+
+/* Create a container using CSS properties */
+
+
+/* Apply CSS properties to ui-widgets class */
+
+.ui-widgets {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 11rem;
+    margin: 1.5rem;
+    border: 2.2rem solid palegreen;
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: palegreen;
+    border-top-color: chartreuse;
+    border-right-color: darkgreen;
+    border-bottom-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/*  Apply css properties to the second 
+    child of ui-widgets class */
+
+.ui-widgets:nth-child(2) {
+    border-top-color: chartreuse;
+    border-right-color: white;
+    border-left-color: palegreen;
+    border-bottom-color: white;
+}
+
+
+/*  Apply css properties to ui-widgets class 
+    and ui-values class*/
+
+.ui-widgets .ui-values {
+    top: 55px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 4.0rem;
+}
+
+
+/*  Apply css properties to ui-widgets 
+    class and ui-labels class*/
+
+.ui-widgets .ui-labels {
+    left: 0;
+    bottom: -16px;
+    text-shadow: 0 0 4px grey;
+    color: black;
+    position: absolute;
+    width: 100%;
+    font-size: 26px;
+}
+
+.b1 {
+    background-color: #2BE577;
+    text-align: center;
+    height: 55px;
+    width: 80%;
+    margin-top: 2.8%;
+    margin-left: 20%;
+    border: 0px solid;
+}
+
+#month,
+#year,
+option {
+    background-color: #2BE577;
+    text-align: center;
+    height: 55px;
+    width: 90%;
+    padding-top: 0%;
+    border: 0px solid;
+}
+
+.bh3 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.b2 {
+    background-color: #D6E9FB;
+    height: 14.5rem;
+}
+
+table,
+th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: #D7EEF3;
+}
+
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: #EFFAF2;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.ptbl td {
+    font-size: 12px;
+}
+
+.profit {
+    background-color: #DCF4E1;
+    width: 40%;
+}
+
+table {
+    width: 100%;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: -75px;
+    background-color: white;
+    padding: 50px;
+}

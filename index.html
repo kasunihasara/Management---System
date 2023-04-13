@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist\css\bootstrap.css">
+    <link rel="stylesheet" type="" href="bootstrap-5.2.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body style="background-color:#FAEED2">
+    <!--Main SideBar-->
+    <header>
+
+        <div class="sidebar">
+            <a onclick="addOrder()"><img src=" images\icons8-purchase-order-50.png  " alt=" " style="width: 50px; height:50px; "></a>
+            <a><img src="images\analytics-circle-green-512.webp " alt=" " style="width: 40px; height:40px; "></a>
+            <a><img src="images\red_shoppictbasket_1484336512-1.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a onclick="inventoryManagement()"><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a onclick="addSalesRep()"><img src="images\icons8-name-tag-96.png " alt=" " style="width: 40px; height:40px; "></a>
+            <a onclick="viewCustomer()"><img src="images\person-icon-red-14.jpg " alt=" " style="width: 40px; height:40px; "></a>
+            <a onclick="addPayment()"><img src="images\icons8-dollar-sign-64.png " alt=" " style="width: 40px; height:40px; "></a>
+        </div>
+
+        <!-- BurgerMenu -->
+        <div id="myLinks">
+            <div class="sidebar" style="width:260px;">
+                <a><img src="images\icons8-purchase-order-50.png " alt=" " style="width: 50px; height:50px; ">
+                    <p onclick="addOrder()" class="para " style="display: inline-block; margin:20px "> Order</p>
+                </a>
+
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\analytics-circle-green-512.webp " alt=" " style="width: 40px; height:40px; ">
+                    <p style="display: inline-block; margin:20px "> Analysis</p>
+                    </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="inventoryReport()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Monthly Inventory</a>
+                    <a onclick="returnReport()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Return Report</a>
+                    <a onclick="Invoice()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Invoice</a>
+                    <a onclick="salesReport()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Monthly Sales</a>
+                    <a onclick="ProductAnalysis()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Product Analysis</a>
+                    <a onclick="loadRepProgress()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Sales Representative Analysis</a>
+
+                </div>
+
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\red_shoppictbasket_1484336512-1.png " alt=" " style="width: 40px; height:40px; ">
+                    <p style="display: inline-block; margin:20px "> Product</p>
+                    </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="addProduct()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Add Product</a>
+                    <a onclick="viewProduct()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">View Product</a>
+
+
+                </div>
+
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\person-icon-red-14.jpg " alt=" " style="width: 40px; height:40px; ">
+                    <p style="display: inline-block; margin:20px "> Customer</p>
+                    </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="addCustomer()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Add Customer</a>
+                    <a onclick="viewCustomer()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">View Customer</a>
+                    <a onclick="viewOrder()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">View Order</a>
+
+
+                </div>
+
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\icons8-name-tag-96.png " alt=" " style="width: 40px; height:40px; ">
+                    <p style="display: inline-block; margin:20px ">Sales.R</p>
+                    </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="addSalesRep()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Add Sales Representative</a>
+                    <a onclick="viewSalesRep()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">View Sales Representative</a>
+
+
+                </div>
+
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png " alt=" " style="width: 40px; height:40px; ">
+                    <p style="display: inline-block; margin:20px "> Iventory</p>
+                    </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="addInventory()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Add Inventory</a>
+                    <a onclick="inventoryManagement()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Inventory Management</a>
+                    <a onclick="AvailableItem()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Available Item</a>
+                    <a onclick="returnItem()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Return  Item</a>
+
+
+                </div>
+                <button class="dropdown-btn " style="box-shadow: none; "><img src="images\icons8-dollar-sign-64.png " alt=" " style="width: 40px; height:40px; ">
+                    <p class="para " style="display: inline-block; margin:20px "> Payment</p>
+                </button>
+                <div class="dropdown-container ">
+
+
+                    <a onclick="addPayment()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Add Payment</a>
+                    <a onclick="viewpayment()" class="text-reset " style="text-decoration: inherit;font-size:17px; ">Veiw Payment</a>
+                    
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+        <!-- BurgerMenu -->
+        <script>
+            document.getElementById("myLinks").style.display = "none";
+        </script>
+
+        <!-- Navbar -->
+        <nav id="main-navbar " class="navbar navbar-expand-lg navbar-light bg-white fixed-top " style="height:60px ">
+            <!-- Container wrapper -->
+            <div class="container-fluid " style="background-color: #EFE695;height:60px ">
+
+                <a href="javascript:void(0); " onclick="myFunction()"><img src="images\588a6507d06f6719692a2d15 (1).png " alt=" " style="width: 35px; height:35px; margin-left:20px "></a>
+                <h2 style="left:120px; position: absolute; ">NAVOD Distribution</h2>
+
+
+
+
+
+
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main style="margin-top: 58px;">
+
+        <script src="Components/app.js" type="module"></script>
+        <div id="main-body" class="container pt-4">
+
+            <test-zero></test-zero>
+        </div>
+    </main>
+    <!--Main layout-->
+    <script>
+    function updateproduct(p_id) {
+    document.getElementById("main-body").innerHTML = `<update-product p_id="${p_id}""></update-product>`;
+    document.getElementById("myLinks").style.display = "none";
+}
+
+    function updatecustomer(customer_id) {
+    document.getElementById("main-body").innerHTML = `<update-customer customer_id="${customer_id}"></update-customer>`;
+    document.getElementById("myLinks").style.display = "none";
+}
+
+    function updateorder(o_id) {
+    document.getElementById("main-body").innerHTML = `<update-order o_id="${o_id}"></update-order>`;
+    document.getElementById("myLinks").style.display = "none";
+}
+
+    function updaterep(rep_id) {
+    document.getElementById("main-body").innerHTML = `<update-rep rep_id="${rep_id}"></update-rep>`;
+    document.getElementById("myLinks").style.display = "none";
+}
+    function updatereturns(p_id, customer_id, date) {
+            date=convert(date);
+            document.getElementById("main-body").innerHTML = `<update-returns p_id="${p_id}" customer_id="${customer_id}" date="${date}"></update-returns>`;
+}
+function updatepayment(payment_id) {
+            document.getElementById("main-body").innerHTML = `<update-payment payment_id="${payment_id}"></update-payment>`;
+}
+
+function convert(str) {
+  var date = new Date(str),
+    mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+    day = ("0" + date.getDate()).slice(-2);
+  return [date.getFullYear(), mnth, day].join("-");
+}
+
+
+    </script>
+    <script src="js/burgerMenu.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/sideBarDropDown.js"></script>
+
+
+
+</body>
+
+<script>
+    const { app, BrowserWindow, ipcMain } = require("electron")
+    function logOut() {
+        window.location.replace("./auth.html");
+    }
+</script>
+
+</html>

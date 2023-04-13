@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist\css\bootstrap.css">
+    <link rel="stylesheet" type="" href="bootstrap-5.2.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <style>
+
+    </style>
+
+
+<style> 
+    .logout{
+        border: none;
+        background-color: red;
+        margin-top: 25px;
+        width: 100px;
+        height: 40px;
+        margin-left: 900px;
+        color: white;
+    }
+    </style>
+
+</head>
+
+<body style="background-color:#FAEED2">
+    <!--Main Navigation-->
+    <header>
+        <!-- Sidebar -->
+        <div>
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white" style="width: 100px;">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4" styles="width=40px">
+                        <!-- Collapse 1 -->
+
+                        <!--<a class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-mdb-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+                    <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Expanded menu</span>
+                    </a>-->
+
+                        <!-- Collapsed content -->
+                        <ul id="collapseExample1" class="collapse show list-group list-group-flush" style="list-style-type: none; text-align:center;">
+
+                            <li style="margin-top:10px">
+                                <a href="" class="text-reset"><img src="images\customers-icon-3.png" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\analytics-circle-green-512.webp" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\red_shoppictbasket_1484336512-1.png" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\icons8-name-tag-96.png" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\person-icon-red-14.jpg" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+                            <br><br>
+                            <li>
+                                <a href="" class="text-reset"><img src="images\icons8-dollar-sign-64.png" alt="" style="width: 50px; height:50px;"></a>
+                            </li>
+
+                        </ul>
+                        <!-- Collapse 1 -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar -->
+
+        <!-- BurgerMenu -->
+
+        <div id="myLinks">
+            <nav class="collapse d-lg-block sidebar collapse bg-white" style="width:240px;">
+                <div class=" position-sticky ">
+                    <div class="list-group list-group-flush mx-3 mt-4 ">
+
+
+
+
+                        <div class="sidenav">
+
+                            <a href="" class="text-reset"><img src="images\customers-icon-3.png" alt="" style="width: 40px; height:40px;">
+                                <p class="para" style="display: inline-block; margin:20px"> Agent</p>
+                            </a>
+                            <button class="dropdown-btn" style="box-shadow: none;"><img src="images\analytics-circle-green-512.webp " alt=" " style="width: 40px; height:40px;">
+                                <p style="display: inline-block; margin:20px"> Analysis</p>
+                                </button>
+                            <div class="dropdown-container">
+
+
+                                <a href="#" class="text-reset " style="text-decoration: inherit;font-size:17px;">Sales Summary</a>
+                                <a href="#" class="text-reset " style="text-decoration: inherit;font-size:17px;">Sales by Sales Rep</a>
+                                <a href="#" class="text-reset " style="text-decoration: inherit;font-size:17px;">Sales by Product</a>
+
+                            </div>
+
+                            <a href=" " class="text-reset " style="text-decoration: inherit; "><img src="images\red_shoppictbasket_1484336512-1.png " alt=" " style="width: 40px; height:40px; ">
+                                <p style="display: inline-block; margin:20px" > Products</p>
+                            </a>
+                            <a href=" " class="text-reset " style="text-decoration: inherit;"><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png
+                                " alt=" " style="width: 40px; height:40px; ">
+                                <p style="display: inline-block; margin:20px"> Inventory</p>
+                            </a>
+                            <a href=" " class="text-reset " style="text-decoration: inherit;"><img src="images\icons8-name-tag-96.png " alt=" " style="width: 40px; height:40px; ">
+                                <p style="display: inline-block; margin:20px"> Sales Rep</p>
+                            </a>
+
+                            <a href=" " class="text-reset " style="text-decoration: inherit;"><img src="images\person-icon-red-14.jpg " alt=" " style="width: 40px; height:40px; ">
+                                <p style="display: inline-block; margin:20px"> Customer</p>
+                            </a>
+                            <a href=" " class="text-reset " style="text-decoration: inherit;"><img src="images\icons8-dollar-sign-64.png " alt=" " style="width: 40px; height:40px; ">
+                                <p style="display: inline-block; margin:20px"> Payment</p>
+                            </a>
+                        </div>
+
+
+
+
+
+
+
+
+                        <!-- Collapse 1 -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- BurgerMenu -->
+        <script>
+            document.getElementById("myLinks").style.display = "none ";
+        </script>
+
+        <!-- Navbar -->
+        <nav id="main-navbar " class="navbar navbar-expand-lg navbar-light bg-white fixed-top " style="height:60px ">
+            <!-- Container wrapper -->
+            <div class="container-fluid " style="background-color: #EFE695;height:60px ">
+
+                <a href="javascript:void(0); " onclick="myFunction() "><img src="images\588a6507d06f6719692a2d15 (1).png " alt=" " style="width: 35px; height:35px; margin-left:20px "></a>
+                <h2 style="left:120px; position: absolute; ">NAVOD Distribution</h2>
+
+
+
+
+
+
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+
+    <main style="margin-top: 58px; ">
+        <div>
+            <button class="logout" onclick="logOut()">LOGOUT</button>
+            <div style="margin-top: 120px;">
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-left: 30px; margin-top: 80px;"><img src="images\analytics-circle-green-512.webp" style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Analysis</h5></div>
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-left: 400px; margin-top: -78px;"><img src="images\red_shoppictbasket_1484336512-1.png " alt=" "style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Products</h5></div>
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-left: 800px; margin-top: -78px;"><img src="images\micro-distribution-inventory-svg-png-icon-free-download-inventory-icon-flat-png-free-transparent-png-clipart-images-download.png " alt=" " style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Inventory</h5></div>
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-top: 80px; margin-left: 30px;"><img src="images\icons8-name-tag-96.png " style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Sales Rep</h5></div>
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-left: 400px; margin-top: -78px;"><img src="images\person-icon-red-14.jpg " style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Customer</h5></div>
+            <div style="background-color: rgb(245, 224, 175); width:200px; height: 80px; padding: 15px; margin-left: 800px; margin-top: -78px;"><img src="images\icons8-dollar-sign-64.png " style="width: 50px; height:50px; "><h5 style="display: inline; margin-left:20px;">Payment</h5></div>
+        </div>
+    </div>
+    </main>
+
+
+    <!--Main layout-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("main-body").innerHTML="<test-one></test-one>";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+    function myproduct(){
+        document.write(5 + 6);
+      document.getElementById('pimage').src = "icons8-fast-moving-consumer-goods-100.png";
+    }
+
+    </script>
+
+
+
+</body>
+
+</html>

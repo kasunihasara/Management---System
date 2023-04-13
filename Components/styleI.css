@@ -1,0 +1,62 @@
+.txt1[type=text] {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+    font-family: none;
+    color: gray;
+}
+
+.fname[type=text] {
+    background-color: #FAEED2;
+    height: 40px;
+    width: 47%;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+}
+
+input[type=checkbox] {
+    width: 30px;
+    height: 20px;
+    padding: 2px 13px;
+    display: inline;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+    margin-left: 80px;
+}
+
+.tbl {
+    background-color: rgba(255, 255, 255, 1);
+    width: 1180px;
+    margin-top: 20px;
+    height: auto;
+    margin-left: 10px;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+table {
+    margin-top: 100px;
+    margin: 20px;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: grey;
+}
+
+button {
+    width: 100px;
+    background-color: rgba(0, 200, 81, 1);
+    border: none;
+    margin-top: 30px;
+    margin-left: 480px;
+    padding: 5px;
+    height: 30px;
+}
